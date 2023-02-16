@@ -1,3 +1,3 @@
 # Instruções do projeto
 
-*Coloque uma pequena justificativa sobre a escolha desse tema*
+*Tema do desafio que escolhi seria um portal de notícias ao mercado  financeiro*

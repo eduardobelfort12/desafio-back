@@ -1,0 +1,37 @@
+{
+  "name": "desafio-back",
+  "version": "1.0.0",
+  "description": "Este teste é desenvolvido pela [Qesh](https://www.linkedin.com/company/qesh-payments/) e tem como objetivo avaliar tecnicamente o candidato para a vaga de Back-End.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec ts-node ./project/src/index.ts",
+    "migration:generate": "typeorm-ts-node-commonjs -d ./project/src/data-source.ts migration:generate ./project/src/migrations/default",
+    "migration:run": "typeorm-ts-node-commonjs -d ./project/src/data-source.ts migration:run "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardobelfort12/desafio-back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardobelfort12/desafio-back/issues"
+  },
+  "homepage": "https://github.com/eduardobelfort12/desafio-back#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.13.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "pg": "^8.9.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.12"
+  }
+}
